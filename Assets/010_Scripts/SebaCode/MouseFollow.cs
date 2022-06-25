@@ -9,14 +9,17 @@ public class MouseFollow : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     void Update()
     {
-        if (Vector2.Distance(Input.mousePosition, transform.position) < distance)
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Debug.Log("laposicionesdelmouses: "+Input.mousePosition);
+        //}
+
+        if (Vector2.Distance(Input.mousePosition, transform.position) < distance)   // No sigue al mouse por ?????? razon.
         {
-            Vector3 dir = Input.mousePosition;
+            Vector3 dir = transform.position - Input.mousePosition;
             dir = dir.normalized;
 
-            //rb.AddForce(dir * pushPower * Time.deltaTime, ForceMode2D.Force);
-
-            rb.velocity = dir * pushPower;
+            rb.AddForce(dir * -pushPower, ForceMode2D.Impulse);
         }
         else
         {

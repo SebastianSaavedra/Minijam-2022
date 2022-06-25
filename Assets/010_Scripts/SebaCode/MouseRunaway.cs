@@ -20,6 +20,10 @@ namespace SebaCode
 
                 //rb.velocity = dir * pushPower;
             }
+            else
+            {
+                rb.velocity = Vector2.zero;
+            }
         }
     }
 }
