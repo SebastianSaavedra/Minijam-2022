@@ -208,6 +208,8 @@ MonoBehaviour:
   maxX: 450
   minY: -300
   maxY: 300
+  canDrag: 1
+  isRandom: 0
 --- !u!1 &4635325787153685560
 GameObject:
   m_ObjectHideFlags: 0

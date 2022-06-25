@@ -35,8 +35,15 @@ public class SpawnInCanvas : MonoBehaviour
                 Debug.Log("B");
                 GameObject pregunta = Instantiate(preguntas.pops[0], canvas);
             RectTransform preguntaPos = pregunta.GetComponent<RectTransform>();
+                if (!preguntaPos.GetComponent<RandomCorner>()) 
+                {
             preguntaPos.localPosition = new Vector3(Random.Range(pregunta.GetComponent<ImageBounds>().minX, pregunta.GetComponent<ImageBounds>().maxX)
                 , Random.Range(pregunta.GetComponent<ImageBounds>().minY, pregunta.GetComponent<ImageBounds>().maxY), 0);
+                }
+                else 
+                {
+                    preguntaPos.GetComponent<RandomCorner>().Corner();
+                }
             Destroy(pregunta, 5);
             pop += 1;
         }

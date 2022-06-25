@@ -26,7 +26,7 @@ public class PopManager : MonoBehaviour
             return popManager;
         }
     }
-    UnityAction listener1, listener2;
+    UnityAction listener1, listener2,listener3;
     [SerializeField] int worldSi, worldNo;
     [SerializeField] GameObject world;
     public static bool cor;
@@ -34,8 +34,10 @@ public class PopManager : MonoBehaviour
     {
         listener1 = new UnityAction(Si);
         listener2 = new UnityAction(No);
+        listener2 = new UnityAction(Castigo);
         PopManager.StartListening("Si", Si);
         PopManager.StartListening("No", No);
+        PopManager.StartListening("Castigo", Castigo);
     }
 
     // Update is called once per frame
@@ -57,6 +59,10 @@ public class PopManager : MonoBehaviour
         }
     }
 
+    void Castigo() 
+    {
+        Debug.Log("Castigo");
+    }
     IEnumerator worldSearchMePop()
     {
         world.SetActive(true);

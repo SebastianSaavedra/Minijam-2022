@@ -10,8 +10,18 @@ public class ImageBounds : MonoBehaviour,IDragHandler,IEndDragHandler,IBeginDrag
     public float minY;
     public float maxY;
     Vector3 _dragOffSet;
+    [SerializeField] bool canDrag;
+    public bool isRandom;
+    [SerializeField] bool hasVariant;
+    [SerializeField] List<GameObject> variant;
 
-
+    void Start() 
+    {
+        if (hasVariant) 
+        {
+            variant[Random.Range(0, variant.Count)].SetActive(true);
+        }
+    }
     Vector3 MousePos()
     {
         var mousePos = Input.mousePosition;
@@ -24,7 +34,10 @@ public class ImageBounds : MonoBehaviour,IDragHandler,IEndDragHandler,IBeginDrag
     }
     public void OnDrag(PointerEventData eventData) 
     {
+        if (canDrag) 
+        {
         transform.position = MousePos() +_dragOffSet;
+        }
     }
     public void OnEndDrag(PointerEventData eventData)
     {
