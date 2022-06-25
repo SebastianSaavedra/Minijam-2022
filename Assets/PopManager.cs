@@ -26,17 +26,47 @@ public class PopManager : MonoBehaviour
             return popManager;
         }
     }
+    UnityAction listener1, listener2;
+    [SerializeField] int worldSi, worldNo;
+    [SerializeField] GameObject world;
+    public static bool cor;
     void Start()
     {
-        
+        listener1 = new UnityAction(Si);
+        listener2 = new UnityAction(No);
+        PopManager.StartListening("Si", Si);
+        PopManager.StartListening("No", No);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+    void Si()
+    {
+        worldSi += 1;
+            StartCoroutine(worldSearchMePop());
+    }
+    void No()
+    {
+        worldNo += 1;
+        if (worldNo >= 5)
+        {
+            StartCoroutine(worldSearchMePop());
+        }
     }
 
+    IEnumerator worldSearchMePop()
+    {
+        world.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        world.SetActive(false);
+        cor = true;
+        yield break;
+    }
+
+    #region event
     void Init()
     {
         if (eventdic == null)
@@ -78,4 +108,5 @@ public class PopManager : MonoBehaviour
             thisEvent.Invoke();
         }
     }
+    #endregion
 }

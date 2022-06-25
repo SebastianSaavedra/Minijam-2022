@@ -26,12 +26,14 @@ public class SpawnInCanvas : MonoBehaviour
         if (!preguntaOnCanvas) 
         {
         if (Random.value > 0.5) //%50 percent chance
-        {//code here
+        {
+                Debug.Log("A");
         }
 
-        if (Random.value > 0.2) //%80 percent chance (1 - 0.2 is 0.8)
+       else if (Random.value > 0.2) //%80 percent chance (1 - 0.2 is 0.8)
         {
-            GameObject pregunta = Instantiate(preguntas.pops[0], canvas);
+                Debug.Log("B");
+                GameObject pregunta = Instantiate(preguntas.pops[0], canvas);
             RectTransform preguntaPos = pregunta.GetComponent<RectTransform>();
             preguntaPos.localPosition = new Vector3(Random.Range(pregunta.GetComponent<ImageBounds>().minX, pregunta.GetComponent<ImageBounds>().maxX)
                 , Random.Range(pregunta.GetComponent<ImageBounds>().minY, pregunta.GetComponent<ImageBounds>().maxY), 0);
@@ -39,15 +41,14 @@ public class SpawnInCanvas : MonoBehaviour
             pop += 1;
         }
 
-        if (Random.value > 0.95) //%30 percent chance (1 - 0.7 is 0.3)
+       else if (Random.value > 0.95 && !PopManager.cor) //%5percent chance (1 - 0.7 is 0.3)
         { //code here
             GameObject pregunta = Instantiate(preguntas.pops[1], canvas);
             RectTransform preguntaPos = pregunta.GetComponent<RectTransform>();
             preguntaPos.localPosition = new Vector3(Random.Range(pregunta.GetComponent<ImageBounds>().minX, pregunta.GetComponent<ImageBounds>().maxX)
                 , Random.Range(pregunta.GetComponent<ImageBounds>().minY, pregunta.GetComponent<ImageBounds>().maxY), 0);
-            Destroy(pregunta, 5);
+            //Destroy(pregunta, 5);
             preguntaInt += 1;
-            preguntaOnCanvas = true;
         }
         }
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8266965732292395137}
   - component: {fileID: 7264600610664023362}
   - component: {fileID: 3666660816059670464}
+  - component: {fileID: 3369215964820327808}
   m_Layer: 5
   m_Name: Object
   m_TagString: Untagged
@@ -78,6 +79,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3369215964820327808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958925676192950685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5367952b8de0d245964837472fd23df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 6237383063043653374}
 --- !u!1 &2064429706902480612
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +212,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8477878656275586798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3369215964820327808}
+        m_TargetAssemblyTypeName: PreguntaWorld, Assembly-CSharp
+        m_MethodName: Si
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3600382217483960036
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +354,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.1489419
+  currentReadTime: 0.8461342
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0
@@ -511,7 +537,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 117154621586572403}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3369215964820327808}
+        m_TargetAssemblyTypeName: PreguntaWorld, Assembly-CSharp
+        m_MethodName: No
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5830127427041327516
 GameObject:
   m_ObjectHideFlags: 0
