@@ -16,7 +16,7 @@ namespace SebaCode
                 Vector3 dir = transform.position - Input.mousePosition;
                 dir = dir.normalized;
 
-                rb.AddForce(dir * pushPower, ForceMode2D.Force);
+                rb.AddForce(dir * pushPower, ForceMode2D.Impulse);
 
                 //rb.velocity = dir * pushPower;
             }
