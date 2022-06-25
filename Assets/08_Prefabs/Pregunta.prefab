@@ -235,8 +235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchoredPosition: {x: 0, y: 37}
+  m_SizeDelta: {x: 728.3606, y: 149.9238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5704770939705284974
 MonoBehaviour:
@@ -258,10 +258,10 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 0
   uiMode: 1
-  _text: <c=rainbow><w>Hello, World!
-  drawText: Hello, World!
-  hyphenedText: Hello, World!
-  font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  _text: "<c=rainbow><w>\xBFMe dejas salir?"
+  drawText: "\xBFMe dejas salir?"
+  hyphenedText: "\xBFMe dejas salir?"
+  font: {fileID: 12800000, guid: 79c55409a433e6a48bc8a18d0e6b642c, type: 3}
   color:
     serializedVersion: 2
     rgba: 4281479730
@@ -285,7 +285,7 @@ MonoBehaviour:
   perlinPitchMulti: 1
   reading: 0
   unreading: 0
-  size: 32
+  size: 48.88
   quality: 64
   filterMode: 1
   style: 0
@@ -297,18 +297,18 @@ MonoBehaviour:
   wrapText: 1
   breakText: 0
   insertHyphens: 0
-  anchor: 0
-  alignment: 0
+  anchor: 3
+  alignment: 1
   lineCountLimit: 0
   textMat: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 100, y: -50, z: 0}
-  rawBottomRightBounds: {x: -100, y: -18, z: 0}
-  topLeftBounds: {x: 860, y: 590, z: 0}
-  topRightBounds: {x: 1060, y: 590, z: 0}
-  bottomLeftBounds: {x: 860, y: 558, z: 0}
-  bottomRightBounds: {x: 1060, y: 558, z: 0}
-  centerBounds: {x: 960, y: 574, z: 0}
+  rawTopLeftBounds: {x: 364.1803, y: -24.44, z: 0}
+  rawBottomRightBounds: {x: -364.1803, y: 24.44, z: 0}
+  topLeftBounds: {x: 595.8197, y: 601.44, z: 0}
+  topRightBounds: {x: 1324.1803, y: 601.44, z: 0}
+  bottomLeftBounds: {x: 595.8197, y: 552.56, z: 0}
+  bottomRightBounds: {x: 1324.1803, y: 552.56, z: 0}
+  centerBounds: {x: 960, y: 577, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -328,7 +328,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.33333334
+  currentReadTime: 0.1489419
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0
