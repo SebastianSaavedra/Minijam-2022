@@ -105,11 +105,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 142.5, y: -18.7565, z: 0}
   rawBottomRightBounds: {x: -142.5, y: 13.2435, z: 0}
-  topLeftBounds: {x: 46.670345, y: 246.50578, z: 0}
-  topRightBounds: {x: 147.212, y: 246.50578, z: 0}
-  bottomLeftBounds: {x: 46.670345, y: 235.21689, z: 0}
-  bottomRightBounds: {x: 147.212, y: 235.21689, z: 0}
-  centerBounds: {x: 96.94118, y: 240.86133, z: 0}
+  topLeftBounds: {x: 680.349, y: 625.7565, z: 0}
+  topRightBounds: {x: 965.349, y: 625.7565, z: 0}
+  bottomLeftBounds: {x: 680.349, y: 593.7565, z: 0}
+  bottomRightBounds: {x: 965.349, y: 593.7565, z: 0}
+  centerBounds: {x: 822.849, y: 609.7565, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -129,7 +129,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.0591331
+  currentReadTime: 0.33333334
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -836,7 +836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

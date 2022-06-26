@@ -79,7 +79,7 @@ public class SpawnInCanvas : MonoBehaviour
                         {
                             preguntaPos.GetComponent<RandomCorner>().Corner();
                         }
-                        Destroy(pregunta, 5);
+                       // Destroy(pregunta, 5);
                         break;
                 }    
         }

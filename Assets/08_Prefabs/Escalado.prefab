@@ -1071,6 +1071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUp_extrovertLongo
       objectReference: {fileID: 0}
+    - target: {fileID: 1311592357471945162, guid: 366b7214ee519e141892c641731653ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1311592357471945165, guid: 366b7214ee519e141892c641731653ec, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

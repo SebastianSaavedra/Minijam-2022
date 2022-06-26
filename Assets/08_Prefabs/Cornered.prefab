@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rectTransform: {fileID: 3535191738018554196}
-  timer: 1
+  timer: 5
   child: {fileID: 4812229724540737722}
 --- !u!114 &4229513344809258982
 MonoBehaviour:
@@ -509,6 +509,10 @@ PrefabInstance:
     - target: {fileID: 1311592357471945162, guid: 366b7214ee519e141892c641731653ec, type: 3}
       propertyPath: m_Name
       value: PopUp_extrovertLongo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311592357471945162, guid: 366b7214ee519e141892c641731653ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1311592357471945165, guid: 366b7214ee519e141892c641731653ec, type: 3}
       propertyPath: m_Pivot.x

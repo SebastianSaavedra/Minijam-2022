@@ -113,7 +113,7 @@ Material:
     - _Brightness: 0
     - _BumpScale: 1
     - _ChromAberrAlpha: 0.4
-    - _ChromAberrAmount: 1
+    - _ChromAberrAmount: 0
     - _ClipUvDown: 0
     - _ClipUvLeft: 0
     - _ClipUvRight: 0
@@ -133,7 +133,7 @@ Material:
     - _CullingOption: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DistortAmount: 0.5
+    - _DistortAmount: 0
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
     - _DstBlend: 0
@@ -144,12 +144,12 @@ Material:
     - _FadeBurnWidth: 0.025
     - _FishEyeUvAmount: 0.35
     - _FlickerAlpha: 0
-    - _FlickerFreq: 0.2
+    - _FlickerFreq: 0
     - _FlickerPercent: 0.05
     - _GhostBlend: 1
     - _GhostColorBoost: 1
     - _GhostTransparency: 0
-    - _GlitchAmount: 20
+    - _GlitchAmount: 0
     - _GlitchSize: 0.25
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -168,7 +168,7 @@ Material:
     - _GreyscaleBlend: 1
     - _GreyscaleLuminosity: 0
     - _GreyscaleOutline: 0
-    - _HandDrawnAmount: 20
+    - _HandDrawnAmount: 0
     - _HandDrawnSpeed: 15
     - _HitEffectBlend: 1
     - _HitEffectGlow: 5
@@ -213,7 +213,7 @@ Material:
     - _OverlayGlow: 1
     - _Parallax: 0.02
     - _PinchUvAmount: 0.35
-    - _PixelateSize: 10
+    - _PixelateSize: 100
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0

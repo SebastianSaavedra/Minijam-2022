@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -822,11 +822,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 142.5, y: -18.7565, z: 0}
   rawBottomRightBounds: {x: -142.5, y: 13.2435, z: 0}
-  topLeftBounds: {x: 115.81479, y: 259.55856, z: 0}
-  topRightBounds: {x: 216.35645, y: 259.55856, z: 0}
-  bottomLeftBounds: {x: 115.81479, y: 248.26967, z: 0}
-  bottomRightBounds: {x: 216.35645, y: 248.26967, z: 0}
-  centerBounds: {x: 166.08562, y: 253.91412, z: 0}
+  topLeftBounds: {x: 876.349, y: 662.7565, z: 0}
+  topRightBounds: {x: 1161.349, y: 662.7565, z: 0}
+  bottomLeftBounds: {x: 876.349, y: 630.7565, z: 0}
+  bottomRightBounds: {x: 1161.349, y: 630.7565, z: 0}
+  centerBounds: {x: 1018.849, y: 646.7565, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -846,7 +846,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.214289
+  currentReadTime: 0.33333334
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0

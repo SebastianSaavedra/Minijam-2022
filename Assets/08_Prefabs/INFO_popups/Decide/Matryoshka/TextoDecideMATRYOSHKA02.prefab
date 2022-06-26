@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -821,11 +821,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 142.5, y: -18.7565, z: 0}
   rawBottomRightBounds: {x: -142.5, y: 13.2435, z: 0}
-  topLeftBounds: {x: 132.39534, y: 246.50578, z: 0}
-  topRightBounds: {x: 232.937, y: 246.50578, z: 0}
-  bottomLeftBounds: {x: 132.39534, y: 235.21689, z: 0}
-  bottomRightBounds: {x: 232.937, y: 235.21689, z: 0}
-  centerBounds: {x: 182.66617, y: 240.86133, z: 0}
+  topLeftBounds: {x: 923.349, y: 625.7565, z: 0}
+  topRightBounds: {x: 1208.349, y: 625.7565, z: 0}
+  bottomLeftBounds: {x: 923.349, y: 593.7565, z: 0}
+  bottomRightBounds: {x: 1208.349, y: 593.7565, z: 0}
+  centerBounds: {x: 1065.849, y: 609.7565, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []

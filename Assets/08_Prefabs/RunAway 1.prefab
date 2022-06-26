@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUp_DangerousStretch
       objectReference: {fileID: 0}
+    - target: {fileID: 4209140499938180484, guid: c27f012524b874a45af63fbe61e364be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4209140500179711447, guid: c27f012524b874a45af63fbe61e364be, type: 3}
       propertyPath: textMesh
       value: 
@@ -717,6 +721,10 @@ PrefabInstance:
     - target: {fileID: 1311592357471945162, guid: 366b7214ee519e141892c641731653ec, type: 3}
       propertyPath: m_Name
       value: PopUp_extrovertLongo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311592357471945162, guid: 366b7214ee519e141892c641731653ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1311592357471945165, guid: 366b7214ee519e141892c641731653ec, type: 3}
       propertyPath: m_Pivot.x
