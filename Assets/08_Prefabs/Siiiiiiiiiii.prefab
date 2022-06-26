@@ -105,11 +105,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 306, y: -24.44, z: 0}
   rawBottomRightBounds: {x: -306, y: 24.44, z: 0}
-  topLeftBounds: {x: 654, y: 601.44, z: 0}
-  topRightBounds: {x: 1266, y: 601.44, z: 0}
-  bottomLeftBounds: {x: 654, y: 552.56, z: 0}
-  bottomRightBounds: {x: 1266, y: 552.56, z: 0}
-  centerBounds: {x: 960, y: 577, z: 0}
+  topLeftBounds: {x: -305.99997, y: 61.440002, z: 0}
+  topRightBounds: {x: 306.00003, y: 61.440002, z: 0}
+  bottomLeftBounds: {x: -305.99997, y: 12.559999, z: 0}
+  bottomRightBounds: {x: 306.00003, y: 12.559999, z: 0}
+  centerBounds: {x: 0.000030517578, y: 37, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -129,7 +129,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0
+  currentReadTime: 0.2575176
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8644672155949546039}
-        m_TargetAssemblyTypeName: DestroyParent, Assembly-CSharp
+        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
         m_MethodName: Destroy
         m_Mode: 1
         m_Arguments:
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93f7ddc4746d0b429c98298e608c97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offSetGameobject: {fileID: 4204156266165792087}
+  offSetGameobject: {fileID: 6038624340378485835}
 --- !u!1 &6480576942551488909
 GameObject:
   m_ObjectHideFlags: 0

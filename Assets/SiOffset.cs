@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class SiOffset : MonoBehaviour
 {
-    [SerializeField] GameObject offSetGameobject;
+    [SerializeField] RectTransform offSetGameobject;
     Vector3 offset;
-
+    RectTransform me;
     private void Start()
     {
-        offset = transform.position- offSetGameobject.transform.position;
+        me = GetComponent<RectTransform>();
+        offset = me.transform.localPosition- offSetGameobject.transform.localPosition;
     }
 
     private void Update()
     {
-        transform.position = Input.mousePosition;
-        offSetGameobject.transform.position = new Vector3(transform.position.x-offset.x, transform.position.y - offset.y, 0);
+        me.anchoredPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        offSetGameobject.localPosition = new Vector3(me.transform.localPosition.x-offset.x, me.localPosition.y - offset.y, 0);
     }
 }
