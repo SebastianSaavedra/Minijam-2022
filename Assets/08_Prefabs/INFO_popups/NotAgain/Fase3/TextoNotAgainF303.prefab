@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -373,11 +373,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 152.3295, y: -18.7565, z: 0}
   rawBottomRightBounds: {x: -152.3295, y: 13.2435, z: 0}
-  topLeftBounds: {x: 101.05826, y: 234.51134, z: 0}
-  topRightBounds: {x: 208.53519, y: 234.51134, z: 0}
-  bottomLeftBounds: {x: 101.05826, y: 223.22244, z: 0}
-  bottomRightBounds: {x: 208.53519, y: 223.22244, z: 0}
-  centerBounds: {x: 154.79672, y: 228.86688, z: 0}
+  topLeftBounds: {x: 834.51953, y: 591.7565, z: 0}
+  topRightBounds: {x: 1139.1785, y: 591.7565, z: 0}
+  bottomLeftBounds: {x: 834.51953, y: 559.7565, z: 0}
+  bottomRightBounds: {x: 1139.1785, y: 559.7565, z: 0}
+  centerBounds: {x: 986.849, y: 575.7565, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -397,7 +397,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.1617178
+  currentReadTime: 0.33333334
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0

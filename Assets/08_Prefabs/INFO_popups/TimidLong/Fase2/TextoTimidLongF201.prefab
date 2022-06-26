@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -548,11 +548,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 119.321, y: -18.7565, z: 0}
   rawBottomRightBounds: {x: -119.321, y: 45.2435, z: 0}
-  topLeftBounds: {x: 101.41405, y: 211.228, z: 0}
-  topRightBounds: {x: 185.60164, y: 211.228, z: 0}
-  bottomLeftBounds: {x: 101.41405, y: 188.6502, z: 0}
-  bottomRightBounds: {x: 185.60164, y: 188.6502, z: 0}
-  centerBounds: {x: 143.50784, y: 199.9391, z: 0}
+  topLeftBounds: {x: 835.528, y: 525.75653, z: 0}
+  topRightBounds: {x: 1074.17, y: 525.75653, z: 0}
+  bottomLeftBounds: {x: 835.528, y: 461.75653, z: 0}
+  bottomRightBounds: {x: 1074.17, y: 461.75653, z: 0}
+  centerBounds: {x: 954.849, y: 493.75653, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -572,7 +572,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.2989803
+  currentReadTime: 0.0523749
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0

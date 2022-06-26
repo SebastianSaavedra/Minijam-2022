@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -551,11 +551,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 100, y: -18.7565, z: 0}
   rawBottomRightBounds: {x: -100, y: 45.2435, z: 0}
-  topLeftBounds: {x: 131.65451, y: 205.08968, z: 0}
-  topRightBounds: {x: 202.21008, y: 205.08968, z: 0}
-  bottomLeftBounds: {x: 131.65451, y: 182.51189, z: 0}
-  bottomRightBounds: {x: 202.21008, y: 182.51189, z: 0}
-  centerBounds: {x: 166.9323, y: 193.80078, z: 0}
+  topLeftBounds: {x: 921.249, y: 508.35654, z: 0}
+  topRightBounds: {x: 1121.249, y: 508.35654, z: 0}
+  bottomLeftBounds: {x: 921.249, y: 444.35654, z: 0}
+  bottomRightBounds: {x: 1121.249, y: 444.35654, z: 0}
+  centerBounds: {x: 1021.249, y: 476.35654, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
