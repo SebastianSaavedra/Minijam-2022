@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 348.7568}
+  m_SizeDelta: {x: 612, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7264600610664023362
 CanvasRenderer:
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 286376f6570389346823b743a19367d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -128,8 +128,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 147, y: -76}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 15.0517, y: -47.219833}
+  m_SizeDelta: {x: 132.7035, y: 69.1646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6605935286904355379
 CanvasRenderer:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -284,7 +284,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 0
   uiMode: 1
-  _text: "<c=rainbow><w>\xBFMe dejas salir?"
+  _text: "<c=world><w>\xBFMe dejas salir?"
   drawText: "\xBFMe dejas salir?"
   hyphenedText: "\xBFMe dejas salir?"
   font: {fileID: 12800000, guid: 79c55409a433e6a48bc8a18d0e6b642c, type: 3}
@@ -354,7 +354,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.8461342
+  currentReadTime: 0
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0
@@ -453,8 +453,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: -76}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 209.4563, y: -47.22}
+  m_SizeDelta: {x: 133.8904, y: 69.164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &594543523192481205
 CanvasRenderer:
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -567,7 +567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2376302544151306890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -641,6 +641,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6237383063043653375}
   - component: {fileID: 6247833831428045502}
+  - component: {fileID: 6823609119233493590}
+  - component: {fileID: 3459941274312141099}
   m_Layer: 5
   m_Name: PreguntaWorld
   m_TagString: Untagged
@@ -686,6 +688,35 @@ MonoBehaviour:
   maxY: 400
   canDrag: 1
   isRandom: 0
+  hasVariant: 0
+  isCorner: 0
+  variant1: []
+  variant2: []
+  variant3: []
+--- !u!114 &6823609119233493590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237383063043653374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47556af647f555c4180cd88a25a23a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3459941274312141099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237383063043653374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8923c54426dac0498a8c1093cc10c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8689707832255864135
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3937872376016372689
 RectTransform:
   m_ObjectHideFlags: 0

@@ -199,7 +199,6 @@ MonoBehaviour:
   - {fileID: 5770507589736665624}
   - {fileID: 6605676962435829585}
   - {fileID: 260139332288935815}
-  parent: {fileID: 3535191738018554197}
 --- !u!1001 &3787795530648432820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -457,6 +456,10 @@ PrefabInstance:
     - target: {fileID: 4209140499938180484, guid: c27f012524b874a45af63fbe61e364be, type: 3}
       propertyPath: m_Name
       value: PopUp_DangerousStretch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209140499938180484, guid: c27f012524b874a45af63fbe61e364be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4209140500555108289, guid: c27f012524b874a45af63fbe61e364be, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -793,7 +796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8708775504104811076, guid: ce4b25e7e835cde478b81985261d865a, type: 3}
       propertyPath: currentReadTime
-      value: 0
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 8708775504740894293, guid: ce4b25e7e835cde478b81985261d865a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1048,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571871913270759352, guid: a8bb6c0690b16d5438359ebae9bf34b2, type: 3}
       propertyPath: currentReadTime
-      value: 0
+      value: 0.33333334
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8bb6c0690b16d5438359ebae9bf34b2, type: 3}

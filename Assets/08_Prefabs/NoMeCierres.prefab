@@ -129,7 +129,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 3.52416
+  currentReadTime: 0.0400394
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0
@@ -1184,7 +1184,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0.4193169
+  currentReadTime: 0.33333334
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0

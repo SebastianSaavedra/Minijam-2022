@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &282202595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1206144718290392001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1206144719489823836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -381,11 +381,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 312.15872, y: -16, z: 0}
   rawBottomRightBounds: {x: -312.15872, y: 16, z: 0}
-  topLeftBounds: {x: 252.04358, y: 213.42708, z: 0}
-  topRightBounds: {x: 570.9951, y: 213.42708, z: 0}
-  bottomLeftBounds: {x: 252.04358, y: 197.0789, z: 0}
-  bottomRightBounds: {x: 570.9951, y: 197.0789, z: 0}
-  centerBounds: {x: 411.51935, y: 205.25299, z: 0}
+  topLeftBounds: {x: 648.3413, y: 571.7496, z: 0}
+  topRightBounds: {x: 1272.6587, y: 571.7496, z: 0}
+  bottomLeftBounds: {x: 648.3413, y: 539.7496, z: 0}
+  bottomRightBounds: {x: 1272.6587, y: 539.7496, z: 0}
+  centerBounds: {x: 960.5, y: 555.7496, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -405,7 +405,7 @@ MonoBehaviour:
   debugMode: 0
   totalReadTime: 0
   totalUnreadTime: 0
-  currentReadTime: 0
+  currentReadTime: 0.0226209
   autoRead: 1
   rememberReadPosition: 1
   drawOrder: 0
@@ -486,7 +486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1206144719718317545
 RectTransform:
   m_ObjectHideFlags: 0

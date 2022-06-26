@@ -9,6 +9,7 @@ public class GlitchButton : MonoBehaviour
     [SerializeField] Button glitchedBtn;
     float _time;
     float time;
+    [SerializeField] float timerGlitch,timerNotGlitch;
     Material _material;
 
     private void Start()
@@ -18,13 +19,13 @@ public class GlitchButton : MonoBehaviour
     void Update()
     {
         _time += Time.deltaTime;
-        if (_time >= 1f)
+        if (_time >= timerGlitch)
         {
             _material.SetFloat("_ChromAberrAmount", 0);
             _material.SetFloat("_GlitchAmount", 0);
             glitchedBtn.interactable = true;
             time += Time.deltaTime;
-            if (time >= 1f)
+            if (time >= timerNotGlitch)
             {
                 _time = 0;
                 time = 0;
