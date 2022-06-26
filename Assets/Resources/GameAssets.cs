@@ -19,6 +19,7 @@ public class GameAssets : MonoBehaviour
 
     [Header("Prefabs")]
     public RectTransform pf_FakeBtn;
+    public Sprite ticket;
 
 
 
