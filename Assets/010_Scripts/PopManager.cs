@@ -15,6 +15,7 @@ public class PopManager : MonoBehaviour
     [SerializeField] CameraFX_Castigos fx_Castigos;
     public bool normal, siemprePegado, follow, corner, giratorio, scale, offscreenX, movingX, manyX, glitch, dontEraseMe;
     public float ram;
+    public float safeTime;
     [SerializeField] Slider ramValue;
     public static PopManager instancia
     {
@@ -40,6 +41,7 @@ public class PopManager : MonoBehaviour
     [SerializeField] GameObject world;
     public static bool cor;
     public int fase=1;
+    bool corPerder;
     void Start()
     {
         listener1 = new UnityAction(Si);
@@ -54,7 +56,10 @@ public class PopManager : MonoBehaviour
     void Update()
     {
         ramValue.value = ram;
-
+        if (ram <= 0&&!corPerder) 
+        {
+            StartCoroutine(Perder());
+        }
     }
     void Si()
     {
@@ -135,6 +140,21 @@ public class PopManager : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    IEnumerator Perder() 
+    {
+        corPerder = true;
+        yield return new WaitForSeconds(safeTime);
+        if (ram <= 0) 
+        {
+            Debug.Log("Perdiste");
+        }
+        else 
+        {
+            Debug.Log("Salvado");
+        }
+        yield break;
     }
     IEnumerator worldSearchMePop()
     {

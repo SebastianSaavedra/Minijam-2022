@@ -49,7 +49,7 @@ public class SpawnInCanvas : MonoBehaviour
                             Debug.Log("Es corner");
                     preguntaPos.GetComponent<RandomCorner>().Corner();
                 }
-            Destroy(pregunta, 5);
+           // Destroy(pregunta, 5);
                         break;
 
 
