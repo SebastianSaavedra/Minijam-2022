@@ -45,6 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pf_FakeBtn: {fileID: 2918553548553871606, guid: d623cb6b4e2b25d419bf77061f9b75b6, type: 3}
   ticket: {fileID: 21300000, guid: 5154469a6bdc1554cab572245833bdd5, type: 3}
+  rainParticle1: {fileID: 21300000, guid: 4fe5ec1833f58a14ebcc0ee6289a10a2, type: 3}
+  rainParticle2: {fileID: 21300000, guid: 75c0c7802d861a24d8b4358581b2df95, type: 3}
+  rainParticle3: {fileID: 21300000, guid: b1119dc8f4028d44ea8079b3183ad89b, type: 3}
   audioClipsArray:
   - sound: 0
     audioClip: {fileID: 8300000, guid: cb846b8470d94c8488e1026884e6cd85, type: 3}

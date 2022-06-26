@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9162063855440149091}
   - component: {fileID: 9162063855440149094}
   - component: {fileID: 9162063855440149089}
+  - component: {fileID: 5869704987173466017}
   - component: {fileID: 9162063855440149088}
   m_Layer: 5
   m_Name: RainObject
@@ -76,6 +77,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5869704987173466017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162063855440149090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73243daa00203984aab72a69c9d4fd04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &9162063855440149088
 Animator:
   serializedVersion: 3

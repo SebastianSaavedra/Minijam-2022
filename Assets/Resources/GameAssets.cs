@@ -20,6 +20,7 @@ public class GameAssets : MonoBehaviour
     [Header("Prefabs")]
     public RectTransform pf_FakeBtn;
     public Sprite ticket;
+    public Sprite rainParticle1, rainParticle2, rainParticle3;
 
 
 
