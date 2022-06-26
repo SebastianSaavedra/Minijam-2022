@@ -12,6 +12,7 @@ public class PopManager : MonoBehaviour
     [SerializeField] Popup_Fullscreen popup_Fullscreen;
     [SerializeField] RainSpawner rain;
     [SerializeField] CameraFX_Castigos fx_Castigos;
+    public bool normal, siemprePegado, follow, corner, giratorio, scale, offscreenX, movingX, manyX, glitch, dontEraseMe;
 
     public static PopManager instancia
     {
@@ -140,6 +141,7 @@ public class PopManager : MonoBehaviour
         cor = true;
         yield break;
     }
+
 
     #region event
     void Init()

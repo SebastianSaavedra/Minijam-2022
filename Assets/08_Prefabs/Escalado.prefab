@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3563563928244997312}
   - component: {fileID: 1343507529195769062}
   - component: {fileID: 3409322422107095342}
+  - component: {fileID: 7499333692717417394}
   m_Layer: 5
   m_Name: Escalado
   m_TagString: Untagged
@@ -161,6 +162,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8923c54426dac0498a8c1093cc10c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7499333692717417394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737318074999986102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28c340272bd07349820a2ef45007b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: Scale
 --- !u!1 &4619111755168820826
 GameObject:
   m_ObjectHideFlags: 0
