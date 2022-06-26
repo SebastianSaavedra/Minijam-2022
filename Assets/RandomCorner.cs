@@ -10,7 +10,7 @@ public class RandomCorner : MonoBehaviour
     Vector2 anchirMax;
     Vector2 pivot;
     [SerializeField] float timer;
-    [SerializeField] RectTransform child;
+    public RectTransform child;
 
     private void Start()
     {

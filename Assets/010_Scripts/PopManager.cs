@@ -30,6 +30,7 @@ public class PopManager : MonoBehaviour
     [SerializeField] int worldSi, worldNo;
     [SerializeField] GameObject world;
     public static bool cor;
+    public int fase=1;
     void Start()
     {
         listener1 = new UnityAction(Si);
