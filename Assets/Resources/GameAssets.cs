@@ -19,4 +19,18 @@ public class GameAssets : MonoBehaviour
 
     [Header("Prefabs")]
     public RectTransform pf_FakeBtn;
+
+
+
+
+    public SoundAudioClip[] audioClipsArray;
+
+    [System.Serializable]
+    public class SoundAudioClip
+    {
+        public SoundManager.Sound sound;
+        public AudioClip audioClip;
+        [Range(0f, 2f)]
+        public float volumen;
+    }
 }

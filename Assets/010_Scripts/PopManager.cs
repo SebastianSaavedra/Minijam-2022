@@ -11,6 +11,7 @@ public class PopManager : MonoBehaviour
     private static PopManager popManager;
     [SerializeField] Popup_Fullscreen popup_Fullscreen;
     [SerializeField] RainSpawner rain;
+    [SerializeField] CameraFX_Castigos fx_Castigos;
 
     public static PopManager instancia
     {
@@ -67,18 +68,18 @@ public class PopManager : MonoBehaviour
 
     void Castigo() 
     {
-        Debug.Log("Castigo");
-        int randomVal = Random.Range(0,2);
+        int randomVal = Random.Range(0,5);
+        Debug.Log("El random val es: " + randomVal);
 
         switch (randomVal) 
         {
             //Fullscreen
             case 0:
-        if (!popup_Fullscreen.isActive) 
-        {
-            popup_Fullscreen.Fullscreen();
-        }
-                else 
+                if (!popup_Fullscreen.isActive)
+                {
+                    popup_Fullscreen.Fullscreen();
+                }
+                else
                 {
                     Castigo();
                 }
@@ -86,11 +87,45 @@ public class PopManager : MonoBehaviour
 
             //Rain
             case 1:
-                if (!rain.canRain) 
+                if (!rain.canRain)
                 {
                     rain.canRain = true;
                 }
-                else 
+                else
+                {
+                    Castigo();
+                }
+                break;
+            case 2:
+                if (!fx_Castigos.gameObject.activeSelf)
+                {
+                    fx_Castigos.gameObject.SetActive(true);
+                    fx_Castigos.CameraFX("Inverted");
+                }
+                else
+                {
+                    Castigo();
+                }
+                break;
+            case 3:
+                if (!fx_Castigos.gameObject.activeSelf)
+                {
+                    fx_Castigos.gameObject.SetActive(true);
+                    fx_Castigos.CameraFX("Glitch");
+                }
+                else
+                {
+                    Castigo();
+                }
+                break;
+            case 4:
+                if (!fx_Castigos.gameObject.activeSelf)
+                {
+                    fx_Castigos.gameObject.SetActive(true);
+                    fx_Castigos.CameraFX("Shake");
+                    SoundManager.PlaySound(SoundManager.Sound.Zumbido);
+                }
+                else
                 {
                     Castigo();
                 }

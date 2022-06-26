@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pf_FakeBtn: {fileID: 2918553548553871606, guid: d623cb6b4e2b25d419bf77061f9b75b6, type: 3}
+  audioClipsArray:
+  - sound: 0
+    audioClip: {fileID: 8300000, guid: cb846b8470d94c8488e1026884e6cd85, type: 3}
+    volumen: 1
