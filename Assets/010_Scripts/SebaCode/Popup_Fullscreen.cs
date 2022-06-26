@@ -36,6 +36,19 @@ public class Popup_Fullscreen : MonoBehaviour
         StartCoroutine(CloseCor());
     }
 
+    public void ToggleFirewall() 
+    {
+        Debug.Log("Firewall");
+        if (!isActive) 
+        {
+            Fullscreen();
+        }
+        else 
+        {
+            Close();
+        }
+    }
+
     //private void Update()
     //{
     //    if (Input.GetKeyDown(KeyCode.Space))

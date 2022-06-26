@@ -43,5 +43,14 @@ public class CheckMarkManager : MonoBehaviour
         {
             PopManager.instancia.manyX = checkmark.isOn;
         }
+
+        if (checkmark.isOn)
+        {
+            PopManager.instancia.ram -= 1;
+        }
+        else
+        {
+            PopManager.instancia.ram += 1;
+        }
     }
 }

@@ -15,6 +15,10 @@ public class PopUPTipe : MonoBehaviour
                     Debug.Log("Normal stoped via firewall");
                     Destroy(gameObject);
                 }
+                else 
+                {
+                    PopManager.instancia.ram -= 0.05f;
+                }
                 break;
 
             case "Scale":
@@ -23,12 +27,20 @@ public class PopUPTipe : MonoBehaviour
                     Debug.Log("Scaled stoped via firewall");
                     Destroy(gameObject);
                 }
+                else
+                {
+                    PopManager.instancia.ram -= 0.05f;
+                }
                 break;
             case "FollowUp":
                 if (PopManager.instancia.follow)
                 {
                     Debug.Log("Follower stoped via firewall");
                     Destroy(gameObject);
+                }
+                else
+                {
+                    PopManager.instancia.ram -= 0.05f;
                 }
                 break;
             case "Stick":
@@ -37,12 +49,20 @@ public class PopUPTipe : MonoBehaviour
                     Debug.Log("StickWithMe stoped via firewall");
                     Destroy(gameObject);
                 }
+                else
+                {
+                    PopManager.instancia.ram -= 0.05f;
+                }
                 break;
             case "Corner":
                 if (PopManager.instancia.corner)
                 {
                     Debug.Log("Cornered stoped via firewall");
                     Destroy(gameObject);
+                }
+                else
+                {
+                    PopManager.instancia.ram -= 0.05f;
                 }
                 break;
             case "Giratorio":
@@ -51,12 +71,20 @@ public class PopUPTipe : MonoBehaviour
                     Debug.Log("BreakDancer stoped via firewall");
                     Destroy(gameObject);
                 }
+                else
+                {
+                    PopManager.instancia.ram -= 0.05f;
+                }
                 break;
             case "ManyX":
                 if (PopManager.instancia.manyX)
                 {
                     Debug.Log("CantCloseMe stoped via firewall");
                     Destroy(gameObject);
+                }
+                else
+                {
+                    PopManager.instancia.ram -= 0.05f;
                 }
                 break;
         }

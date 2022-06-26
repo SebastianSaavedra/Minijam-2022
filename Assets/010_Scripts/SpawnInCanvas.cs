@@ -8,7 +8,7 @@ public class SpawnInCanvas : MonoBehaviour
     [SerializeField] float timePeriod = 0.5f;
     [SerializeField] PopManager preguntas;
     [SerializeField] Transform canvas;
-    [SerializeField] int pop, preguntaInt;
+    public int pop, preguntaInt;
     public bool preguntaOnCanvas;
     GameObject pregunta;
     RectTransform preguntaPos;
@@ -19,8 +19,8 @@ public class SpawnInCanvas : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {    
+        pop = canvas.childCount;
     }
 
     public void Spawner()
@@ -65,7 +65,7 @@ public class SpawnInCanvas : MonoBehaviour
                         {
                             preguntaPos.GetComponent<RandomCorner>().Corner();
                         }
-                        Destroy(pregunta, 5);
+                     //   Destroy(pregunta, 5);
                         break;
                     case 3:
                         pregunta = Instantiate(preguntas.pops2[Random.Range(0, preguntas.pops2.Count)], canvas);
@@ -82,7 +82,6 @@ public class SpawnInCanvas : MonoBehaviour
                         Destroy(pregunta, 5);
                         break;
                 }    
-            pop += 1;
         }
 
        //else if (Random.value > 0.95 && !PopManager.cor) //%5percent chance (1 - 0.7 is 0.3)

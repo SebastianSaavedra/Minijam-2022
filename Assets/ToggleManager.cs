@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class ToggleManager : MonoBehaviour
 {
     [SerializeField] List<Toggle> checkmarks;
     [SerializeField] Slider consume;
+    [SerializeField] TextMeshProUGUI ram;
     void Start()
     {
         
@@ -15,6 +16,7 @@ public class ToggleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ram.text =""+ PopManager.instancia.ram;
         GetSliderValue();
         if (consume.value > 0.9f) 
         {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 public class PopManager : MonoBehaviour
 {
     public List<GameObject> pops;
@@ -13,7 +14,8 @@ public class PopManager : MonoBehaviour
     [SerializeField] RainSpawner rain;
     [SerializeField] CameraFX_Castigos fx_Castigos;
     public bool normal, siemprePegado, follow, corner, giratorio, scale, offscreenX, movingX, manyX, glitch, dontEraseMe;
-
+    public float ram;
+    [SerializeField] Slider ramValue;
     public static PopManager instancia
     {
         get
@@ -51,6 +53,7 @@ public class PopManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ramValue.value = ram;
 
     }
     void Si()
