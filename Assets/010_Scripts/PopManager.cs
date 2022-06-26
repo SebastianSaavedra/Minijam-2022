@@ -12,6 +12,7 @@ public class PopManager : MonoBehaviour
     private static PopManager popManager;
     [SerializeField] Popup_Fullscreen popup_Fullscreen;
     [SerializeField] RainSpawner rain;
+    [SerializeField] NotificationTween descarga;
     [SerializeField] CameraFX_Castigos fx_Castigos;
     public bool normal, siemprePegado, follow, corner, giratorio, scale, offscreenX, movingX, manyX, glitch, dontEraseMe;
     public float ram;
@@ -77,7 +78,7 @@ public class PopManager : MonoBehaviour
 
     void Castigo() 
     {
-        int randomVal = Random.Range(0,5);
+        int randomVal = Random.Range(0,6);
         Debug.Log("El random val es: " + randomVal);
 
         switch (randomVal) 
@@ -134,6 +135,15 @@ public class PopManager : MonoBehaviour
                     fx_Castigos.CameraFX("Shake");
                     SoundManager.PlaySound(SoundManager.Sound.Zumbido);
                 }
+                else
+                {
+                    Castigo();
+                }
+                break;
+            case 5:
+                if (!descarga.isActive)
+                {
+                    descarga.Download();                }
                 else
                 {
                     Castigo();
