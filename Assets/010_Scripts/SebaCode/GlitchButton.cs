@@ -23,6 +23,10 @@ public class GlitchButton : MonoBehaviour
         {
             _material.SetFloat("_ChromAberrAmount", 0);
             _material.SetFloat("_GlitchAmount", 0);
+            _material.SetFloat("_FlickerFreq", 0);
+            _material.SetFloat("_PixelateSize", 100);
+            _material.SetFloat("_HandDrawnAmount", 0);
+            _material.SetFloat("_DistortAmount", 0);
             glitchedBtn.interactable = true;
             time += Time.deltaTime;
             if (time >= timerNotGlitch)
@@ -35,6 +39,10 @@ public class GlitchButton : MonoBehaviour
         {
             _material.SetFloat("_ChromAberrAmount", 1);
             _material.SetFloat("_GlitchAmount", 20);
+            _material.SetFloat("_FlickerFreq", .2f);
+            _material.SetFloat("_PixelateSize", 10);
+            _material.SetFloat("_HandDrawnAmount", 20);
+            _material.SetFloat("_DistortAmount", .5f);
             glitchedBtn.interactable = false;
         }
     }
