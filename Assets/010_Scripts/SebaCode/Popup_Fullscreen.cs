@@ -8,7 +8,8 @@ public class Popup_Fullscreen : MonoBehaviour
     [SerializeField] Transform pivot;
     [SerializeField] float _duration = 1;
     RectTransform goRectT;
-    void Start()
+    public bool isActive;
+  public void Fullscreen()
     {
         goRectT = gameObject.GetComponent<RectTransform>();
         goRectT.transform.position = pivot.transform.position;
@@ -16,6 +17,23 @@ public class Popup_Fullscreen : MonoBehaviour
 
         goRectT.DOScale(Vector2.one,_duration);
         goRectT.DOLocalMove(Vector2.zero,_duration);
+        isActive = true;
+    }
+
+    IEnumerator CloseCor() 
+    {
+        //goRectT.transform.position = pivot.transform.position;
+      //  goRectT.transform.localScale = Vector2.zero;
+
+        goRectT.DOScale(Vector2.zero, _duration);
+        goRectT.DOLocalMove(pivot.transform.localPosition, _duration);
+        yield return new WaitForSeconds(_duration);
+        isActive = false;
+        yield break;
+    }
+    public void Close() 
+    {
+        StartCoroutine(CloseCor());
     }
 
     //private void Update()

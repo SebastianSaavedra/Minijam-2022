@@ -290,7 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushPower: 100
   distance: 300
-  rb: {fileID: 0}
+  rb: {fileID: 424650280035236716}
 --- !u!1001 &424650280573059441
 PrefabInstance:
   m_ObjectHideFlags: 0

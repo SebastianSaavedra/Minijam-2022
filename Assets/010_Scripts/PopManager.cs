@@ -5,8 +5,13 @@ using UnityEngine.Events;
 public class PopManager : MonoBehaviour
 {
     public List<GameObject> pops;
+    public List<GameObject> pops2;
+    public List<GameObject> pops3;
     private Dictionary<string, UnityEvent> eventdic;
     private static PopManager popManager;
+    [SerializeField] Popup_Fullscreen popup_Fullscreen;
+    [SerializeField] RainSpawner rain;
+
     public static PopManager instancia
     {
         get
@@ -63,6 +68,34 @@ public class PopManager : MonoBehaviour
     void Castigo() 
     {
         Debug.Log("Castigo");
+        int randomVal = Random.Range(0,2);
+
+        switch (randomVal) 
+        {
+            //Fullscreen
+            case 0:
+        if (!popup_Fullscreen.isActive) 
+        {
+            popup_Fullscreen.Fullscreen();
+        }
+                else 
+                {
+                    Castigo();
+                }
+                break;
+
+            //Rain
+            case 1:
+                if (!rain.canRain) 
+                {
+                    rain.canRain = true;
+                }
+                else 
+                {
+                    Castigo();
+                }
+                break;
+        }
     }
     IEnumerator worldSearchMePop()
     {

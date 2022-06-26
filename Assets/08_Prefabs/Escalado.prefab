@@ -564,9 +564,57 @@ PrefabInstance:
       propertyPath: textMesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: centerBounds.x
+      value: 395.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: centerBounds.y
+      value: 200.74957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: currentReadTime
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: topLeftBounds.x
+      value: 83.34128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: topLeftBounds.y
+      value: 216.74957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: topRightBounds.x
+      value: 707.6587
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: topRightBounds.y
+      value: 216.74957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: bottomLeftBounds.x
+      value: 83.34128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: bottomLeftBounds.y
+      value: 184.74957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: bottomRightBounds.x
+      value: 707.6587
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719489823824, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: bottomRightBounds.y
+      value: 184.74957
+      objectReference: {fileID: 0}
     - target: {fileID: 1206144719718317544, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
       propertyPath: m_Name
       value: PopUp_NormalStretch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206144719718317544, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1206144719718317545, guid: 5bc2589af4af1ee4ba0de0c2124b6752, type: 3}
       propertyPath: m_Pivot.x

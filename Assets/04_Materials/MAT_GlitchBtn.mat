@@ -113,7 +113,7 @@ Material:
     - _Brightness: 0
     - _BumpScale: 1
     - _ChromAberrAlpha: 0.4
-    - _ChromAberrAmount: 0
+    - _ChromAberrAmount: 1
     - _ClipUvDown: 0
     - _ClipUvLeft: 0
     - _ClipUvRight: 0
@@ -149,7 +149,7 @@ Material:
     - _GhostBlend: 1
     - _GhostColorBoost: 1
     - _GhostTransparency: 0
-    - _GlitchAmount: 0
+    - _GlitchAmount: 20
     - _GlitchSize: 0.25
     - _GlossMapScale: 1
     - _Glossiness: 0.5
