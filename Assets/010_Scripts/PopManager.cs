@@ -18,6 +18,7 @@ public class PopManager : MonoBehaviour
     public float ram;
     public float safeTime;
     [SerializeField] Slider ramValue;
+    public bool preguntaOnCanvas;
     public static PopManager instancia
     {
         get
@@ -43,6 +44,18 @@ public class PopManager : MonoBehaviour
     public static bool cor;
     public int fase=1;
     bool corPerder;
+
+    public void fase1() 
+    {
+        fase = 1;
+    }
+
+    public IEnumerator AskSequence() 
+    {
+        yield return new WaitForSeconds(Random.Range(15,20));
+
+        yield break;
+    }
     void Start()
     {
         listener1 = new UnityAction(Si);

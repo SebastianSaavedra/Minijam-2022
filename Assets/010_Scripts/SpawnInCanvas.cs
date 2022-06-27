@@ -25,7 +25,7 @@ public class SpawnInCanvas : MonoBehaviour
 
     public void Spawner()
     {
-        if (!preguntaOnCanvas) 
+        if (!PopManager.instancia.preguntaOnCanvas) 
         {
         if (Random.value > 0.5) //%50 percent chance
         {
