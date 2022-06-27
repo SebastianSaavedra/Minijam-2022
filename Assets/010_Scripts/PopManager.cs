@@ -18,6 +18,7 @@ public class PopManager : MonoBehaviour
     public float ram;
     public float safeTime;
     [SerializeField] Slider ramValue;
+    [SerializeField] GameObject q1, q2, q3;
     public bool preguntaOnCanvas;
     public static PopManager instancia
     {
@@ -48,13 +49,35 @@ public class PopManager : MonoBehaviour
     public void fase1() 
     {
         fase = 1;
+        StartCoroutine(AskSequence());
     }
 
     public IEnumerator AskSequence() 
     {
         yield return new WaitForSeconds(Random.Range(15,20));
+        q1.SetActive(true);
+        preguntaOnCanvas = true;
+        yield return new WaitUntil(()=>preguntaOnCanvas==false);
+        q1.SetActive(false);
+        fase = 2;
+
+        yield return new WaitForSeconds(Random.Range(45,60));
+        preguntaOnCanvas = true;
+        q2.SetActive(true);
+        yield return new WaitUntil(() => preguntaOnCanvas == false);
+        q2.SetActive(false);
+        fase = 3;
+
+        yield return new WaitForSeconds(Random.Range(45, 60));
+        preguntaOnCanvas = true;
+        q3.SetActive(true);
+        yield return new WaitUntil(() => preguntaOnCanvas == false);
 
         yield break;
+    }
+    public void Answered(string AoB) 
+    {
+        preguntaOnCanvas = false;
     }
     void Start()
     {

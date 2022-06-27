@@ -15,7 +15,10 @@ public class SiOffset : MonoBehaviour
 
     private void Update()
     {
-        me.anchoredPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // me.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 posmouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        posmouse.z = 0;
+        me.position = posmouse;
         offSetGameobject.localPosition = new Vector3(me.transform.localPosition.x-offset.x, me.localPosition.y - offset.y, 0);
     }
 }
