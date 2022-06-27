@@ -42,6 +42,6 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   gradientSpread: 0.1
-  scrollSpeed: 0
+  scrollSpeed: 1
   direction: 0
   smoothGradient: 1
