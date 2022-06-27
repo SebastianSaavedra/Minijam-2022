@@ -802,7 +802,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c599b22a3c0762d40ba372a48e45411d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fase1: []
+  fase1:
+  - {fileID: 5727039486679022644}
+  - {fileID: 3111797440636491883}
   fase2:
   - {fileID: 5727039486679022644}
   - {fileID: 3111797440636491883}
