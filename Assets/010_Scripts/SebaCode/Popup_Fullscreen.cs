@@ -9,12 +9,17 @@ public class Popup_Fullscreen : MonoBehaviour
     [SerializeField] float _duration = 1;
     RectTransform goRectT;
     public bool isActive;
-  public void Fullscreen()
+    bool isFS;
+    [SerializeField] RandomAd ads;
+    public void Fullscreen()
     {
         goRectT = gameObject.GetComponent<RectTransform>();
         goRectT.transform.position = pivot.transform.position;
         goRectT.transform.localScale = Vector2.zero;
-
+        if (isFS) 
+        {
+            ads.Randomize();
+        }
         goRectT.DOScale(Vector2.one,_duration);
         goRectT.DOLocalMove(Vector2.zero,_duration);
         isActive = true;

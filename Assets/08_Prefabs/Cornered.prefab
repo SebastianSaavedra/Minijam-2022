@@ -757,6 +757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUp_Danger
       objectReference: {fileID: 0}
+    - target: {fileID: 4080849982728782055, guid: da02903752cf90c43b9562f385fc3b14, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4080849983148430860, guid: da02903752cf90c43b9562f385fc3b14, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
