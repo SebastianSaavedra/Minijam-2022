@@ -17,7 +17,7 @@ public class PopUPTipe : MonoBehaviour
                 }
                 else 
                 {
-                    PopManager.instancia.ram -= 0.05f;
+                    PopManager.instancia.ram -= 0.1f;
                 }
                 break;
 
@@ -29,7 +29,7 @@ public class PopUPTipe : MonoBehaviour
                 }
                 else
                 {
-                    PopManager.instancia.ram -= 0.05f;
+                    PopManager.instancia.ram -= 0.1f;
                 }
                 break;
             case "FollowUp":
@@ -40,7 +40,7 @@ public class PopUPTipe : MonoBehaviour
                 }
                 else
                 {
-                    PopManager.instancia.ram -= 0.05f;
+                    PopManager.instancia.ram -= 0.1f;
                 }
                 break;
             case "Stick":
@@ -51,7 +51,7 @@ public class PopUPTipe : MonoBehaviour
                 }
                 else
                 {
-                    PopManager.instancia.ram -= 0.05f;
+                    PopManager.instancia.ram -= 0.1f;
                 }
                 break;
             case "Corner":
@@ -62,7 +62,7 @@ public class PopUPTipe : MonoBehaviour
                 }
                 else
                 {
-                    PopManager.instancia.ram -= 0.05f;
+                    PopManager.instancia.ram -= 0.1f;
                 }
                 break;
             case "Giratorio":
@@ -73,7 +73,7 @@ public class PopUPTipe : MonoBehaviour
                 }
                 else
                 {
-                    PopManager.instancia.ram -= 0.05f;
+                    PopManager.instancia.ram -= 0.1f;
                 }
                 break;
             case "ManyX":
@@ -84,7 +84,7 @@ public class PopUPTipe : MonoBehaviour
                 }
                 else
                 {
-                    PopManager.instancia.ram -= 0.05f;
+                    PopManager.instancia.ram -= 0.1f;
                 }
                 break;
         }

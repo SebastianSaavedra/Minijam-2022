@@ -100,7 +100,7 @@ public class PopManager : MonoBehaviour
         }
         else if (B >= 2)
         {
-            winA.SetActive(true);
+            winB.SetActive(true);
         }
         web3.SetActive(false);
         canvas.SetActive(false);
