@@ -10,7 +10,7 @@ public class RandomCrossPosition : MonoBehaviour
 
     void Update()
     {
-        if (Vector2.Distance(Input.mousePosition, transform.position) < distance)
+        if (Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), transform.position) < distance)
         {
             timer += Time.deltaTime;
             if (timer >= .4f)
