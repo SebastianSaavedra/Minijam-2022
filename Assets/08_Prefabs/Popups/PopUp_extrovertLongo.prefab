@@ -1260,7 +1260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4155864078234505654, guid: 197cd7d2610479644bc4feddf1824a26, type: 3}
       propertyPath: currentReadTime
-      value: 0
+      value: 0.0048025
       objectReference: {fileID: 0}
     - target: {fileID: 4155864078234505654, guid: 197cd7d2610479644bc4feddf1824a26, type: 3}
       propertyPath: topLeftBounds.x
