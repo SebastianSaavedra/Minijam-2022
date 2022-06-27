@@ -148,7 +148,7 @@ Material:
     - _FlickerPercent: 0.05
     - _GhostBlend: 1
     - _GhostColorBoost: 0.1
-    - _GhostTransparency: 1
+    - _GhostTransparency: 0.6
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _GlossMapScale: 1

@@ -18,8 +18,10 @@ public class PopManager : MonoBehaviour
     public float ram;
     public float safeTime;
     [SerializeField] Slider ramValue;
-    [SerializeField] GameObject q1, q2, q3,web1,web2,web3;
+    [SerializeField] GameObject q1, q2, q3, web1, web2, web3, lose, canvas, winA, WinB,almostLose,almostLoseCamera;
+    [SerializeField] int A, B;
     public bool preguntaOnCanvas;
+
     public static PopManager instancia
     {
         get
@@ -76,12 +78,31 @@ public class PopManager : MonoBehaviour
         preguntaOnCanvas = true;
         q3.SetActive(true);
         yield return new WaitUntil(() => preguntaOnCanvas == false);
-
+        if (A >= 2) 
+        {
+            winA.SetActive(true);
+        }
+        else if (B >= 2)
+        {
+            winA.SetActive(true);
+        }
+        web3.SetActive(false);
+        canvas.SetActive(false);
+        q3.SetActive(false);
+        fase = 0;
         yield break;
     }
     public void Answered(string AoB) 
     {
         preguntaOnCanvas = false;
+        if (AoB == "A") 
+        {
+            A += 1;
+        }
+        if (AoB == "B")
+        {
+            B += 1;
+        }
     }
     void Start()
     {
@@ -195,14 +216,24 @@ public class PopManager : MonoBehaviour
     IEnumerator Perder() 
     {
         corPerder = true;
+        almostLose.SetActive(true);
+        almostLoseCamera.SetActive(true);
         yield return new WaitForSeconds(safeTime);
-        if (ram <= 0) 
+        if (ram <= 0)
         {
+            almostLose.SetActive(false);
+            almostLoseCamera.SetActive(false);
             Debug.Log("Perdiste");
+            lose.SetActive(true);
+            fase = 0;
+            canvas.SetActive(false);
         }
         else 
         {
+            almostLose.SetActive(false);
+            almostLoseCamera.SetActive(false);
             Debug.Log("Salvado");
+            corPerder = false;
         }
         yield break;
     }

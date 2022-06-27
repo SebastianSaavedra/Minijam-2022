@@ -11,9 +11,10 @@ namespace SebaCode
         [SerializeField] Rigidbody2D rb;
         void Update()
         {
-            if (Vector2.Distance(Input.mousePosition, transform.position) < distance)
+            if (Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), transform.position) < distance)
             {
-                Vector3 dir = transform.position - Input.mousePosition;
+                Vector3 dir = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                dir.z = 0;
                 dir = dir.normalized;
 
                 rb.AddForce(dir * pushPower, ForceMode2D.Impulse);
