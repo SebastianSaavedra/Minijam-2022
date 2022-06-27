@@ -59,6 +59,12 @@ public class PopManager : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(20,40));
         q1.SetActive(true);
         preguntaOnCanvas = true;
+        
+        foreach(Transform child in canvas.transform) 
+        {
+            Debug.Log(child.gameObject);
+           child.gameObject.GetComponent<DestroyObject>().Destroy();
+        }
         yield return new WaitUntil(()=>preguntaOnCanvas==false);
         q1.SetActive(false);
         web1.SetActive(false);
