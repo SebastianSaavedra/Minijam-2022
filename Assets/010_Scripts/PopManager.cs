@@ -74,6 +74,11 @@ public class PopManager : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(60,90));
         preguntaOnCanvas = true;
         q2.SetActive(true);
+        foreach (Transform child in canvas.transform)
+        {
+            Debug.Log(child.gameObject);
+            child.gameObject.GetComponent<DestroyObject>().Destroy();
+        }
         yield return new WaitUntil(() => preguntaOnCanvas == false);
         q2.SetActive(false);
         web2.SetActive(false);
@@ -83,6 +88,11 @@ public class PopManager : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(60, 90));
         preguntaOnCanvas = true;
         q3.SetActive(true);
+        foreach (Transform child in canvas.transform)
+        {
+            Debug.Log(child.gameObject);
+            child.gameObject.GetComponent<DestroyObject>().Destroy();
+        }
         yield return new WaitUntil(() => preguntaOnCanvas == false);
         if (A >= 2) 
         {
