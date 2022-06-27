@@ -15,10 +15,10 @@ public class RandomInfo : MonoBehaviour
                 fase1[Random.Range(0, fase1.Count)].SetActive(true);
                 break;
             case 2:
-                fase2[Random.Range(0, fase1.Count)].SetActive(true);
+                fase2[Random.Range(0, fase2.Count)].SetActive(true);
                 break;
             case 3:
-                fase3[Random.Range(0, fase1.Count)].SetActive(true);
+                fase3[Random.Range(0, fase3.Count)].SetActive(true);
                 break;
         }
     }
